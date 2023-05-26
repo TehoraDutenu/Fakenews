@@ -1,0 +1,345 @@
+/* ----- GÉNÉRAL ----- */
+
+:root {
+    --fd-clair: #ffffff;
+    --fd-gris: #f5f5f5;
+    --fd-sombre: #444444;
+
+    --orange: #ed786a;
+    --orange-hover: #fd887a;
+    --rouge: #cc0000;
+    --gris-leger: #e5e5e5;
+    --blanc: #ffffff;
+    --gris-clair: #888888;
+    --gris-moyen: #777777;
+    --gris: #666666;
+    --gris-sombre: #3c3c3c;
+}
+
+body {
+    color: var( --gris-clair );
+    background-color: var( --fd-clair );
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: underline 2px solid #bababa;
+}
+
+    .social-m {
+        text-decoration: underline 2px solid #bababa;
+    }
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 576px;
+}
+
+.centered-content {
+    position: relative;
+    margin-left: 50px;
+    margin-right: 50px;
+    max-width: 540px;
+}
+
+
+hr {
+    height: 10px;
+    border-top: none;
+    border-bottom: 2px solid var(--gris-leger);
+}
+
+    .sub-banner hr {
+        margin-top: 108px;
+    }
+
+    .hr-double {
+        height: 10px;
+        border-top: 2px solid var(--gris-leger);
+        border-bottom: 2px solid var(--gris-leger);
+    }
+    
+    h1, .h1,
+    h2, .h2,
+    h3, .h3,
+    h4, .h4 {
+        letter-spacing: 4px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 16px;
+        margin-top: 50px;
+        margin-bottom: 60px;
+    }
+
+    .h2-main {
+        font-size: 20px;
+        font-weight: bolder;
+        margin-bottom: 10px;
+        margin-top: 50px;
+    }
+
+    h2 {
+        font-size: 24px;
+        font-weight: bolder;
+        margin: 35px 0;
+    }
+
+    h4 {
+        font-size: 25px;
+        margin-top: 70px;
+        margin-bottom: 45px;
+    }
+
+
+    
+/* --- Pastilles grises --- */
+span {
+    background-color: var(--gris-moyen);
+    border-radius: 50%;
+    float: left;
+    height: 40px;
+    margin-right: 10px;
+    padding: 7px;
+    width: 40px;
+}
+
+    i {
+        margin-left: 2px;
+    }
+    
+    
+/* ---- HEADER ---- */
+
+/* ---- Navigation --- */
+.hidden {
+    display: none !important;
+}
+
+/* --- Logo --- */
+.logo {
+    color: var(--orange);
+    letter-spacing: 10px;
+    font-family: "Arvo", cursive;
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 3px 2px 2px var(--gris-leger);
+}
+
+/* --- Bouton menu --- */
+.open-menu {
+    background-color: var(--fd-gris);
+    border: 1px solid var(--gris-léger);
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px var(--gris-leger);
+    margin-left: 10px;
+    margin-top: 10px;
+    height: 45px;
+    width: 80px;
+}
+
+
+/* ----MAIN ---- */
+
+/* --- Images --- */
+.brief-articles img {
+    border: 8px solid var(--gris-leger);
+    margin-top: 20px;
+    margin-left: 35px;
+    display: inline;
+}
+
+.offers img {
+    border: 8px solid var(--gris-leger);
+    float: left;
+}
+
+    .offers p {
+        display: revert;
+        margin-left: 210px;
+    }
+
+.caption img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: absolute;
+    width: 570px;
+    z-index: 0;
+}
+
+.caption {
+    display: flex;
+}
+
+.quote {
+    color: var(--blanc);
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    z-index: 1; 
+}
+
+blockquote {
+    margin-right: 130px;
+    margin-left: 130px;
+    margin-top: 35px;
+}
+
+.record,
+.folder {
+    margin-left: 0px;
+    width: 100%;
+}
+
+
+button {
+    background-color: var(--orange);
+    border-radius: 4px;
+    box-shadow: 3px 3px 3px var(--gris-leger);
+    color: var(--blanc);
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight: bolder;
+    height: 50px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    width: 100%;
+}
+
+    button i {
+        font-size: 15px;
+        margin-right: 10px;
+    }
+
+p {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+}
+
+    .post-time {
+        color: var(--blanc);
+        background-color: var(--gris-clair);
+        display: block;
+        height: 30px;
+        border-radius: 4px;
+        text-align: center;
+        width: 100px;
+        margin-left: 170px;
+    }
+
+    .posts {
+        margin-top: 25px;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+    .posts h4 {
+        margin-top: 45px;
+        letter-spacing: 2px;
+    }
+
+    time {
+        display:inline-block;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+        margin-top: 2px;
+    }
+
+.sub-banner {
+    margin-top: 2px;
+}
+
+
+
+/* ---- FOOTER ---- */
+
+
+footer {
+    background-color: var(--fd-gris);
+    width: 100%;
+    bottom: 0px;
+}
+
+.fouteuw {
+    margin-top: 15px;
+}
+
+    .fouteuw li {
+        width: 460px;
+    }
+
+
+form {
+    width: 100%;
+}
+
+input {
+    background-color: var(--blanc);
+    border-radius: 5px;
+    box-shadow: inset 3px 3px var(--gris-leger);
+    height: 50px;
+    margin-bottom: 20px;
+    padding: 15px;
+    width: 445px;
+}
+
+textarea {
+    background-color: var(--blanc);
+    border-radius: 5px;
+    box-shadow: inset 3px 3px var(--gris-leger);
+    height: 200px;
+    margin-bottom: -10px;
+    padding: 15px;
+    width: 445px;
+}
+
+/* --- Adresses --- */
+ol {
+    display: flex;
+    flex-direction: column;
+}
+
+    ol li {
+        display: flex;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 35px;
+        width: 60%;
+    }
+
+    .postal {
+        margin-left: 45px;
+        width: 250px;
+    }
+
+    address {
+        font-style: inherit;
+    }
+
+    li p {
+        text-align: left;
+    }
+
+.copyright {
+    margin-top: 75px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+
+    /* -- Footer -- */
+    
+}
